@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Fantasy Football Strength bProjection</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 id="title">Fantasy Football Strength Projection</h1>
+            <div>
+                <h3>Player Info:</h3>
+                <input id="addStatPlayerInput" type="text" onfocus="this.value=''" value="Enter Stats"</br></br>
+                <button onclick="handlers.addProjectedStats()">Projected Stats</button></br>
+                <button onclick="handlers.addStats()">Actual Stats</button></br>
+            </div>
+            <div class="stats">
+              <h3>Projected Weekly Total:</h3>
+              <div>
+                <ul id="showProjectedWeeklyStats"></ul>
+              </div>
+                <h3>Weekly Total:</h3>
+                <div>
+                  <ul id="showWeeklyStats"></ul>
+                </div>
+            </div>
+            <div class="stats">
+                <h3>Standard Deviation:</h3>
+                <div id="showStandardDev">
+                </div>
+            </div>
+        </div><!-- .container --->
+    </div><!-- .jumbtron -->
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
